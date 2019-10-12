@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <script type="text/javascript">
+        let a, b, result;
+        let ch = prompt("enter operator");
+        a = prompt('enter number 1');
+        b = prompt('enter number2:');
+
+        switch (ch) {
+            case "+":
+                result = sum(a, b);
+                alert("sum result:" + result);
+                break;
+            case "-":
+                result = minus(a, b);
+                alert("minus result:" + result);
+                break;
+            case "*":
+                result = multi(a, b);
+
+                alert("multiplication result:" + result);
+                break;
+            case "/":
+                result = division(a, b);
+                alert("division result:" + result);
+                break;
+        }
+
+        function sum(a, b) {
+
+            return +a + +b;
+        }
+
+        function minus(a, b) {
+
+            return +a - +b;
+        }
+
+        function multi(a, b) {
+
+            return +a * +b;
+        }
+
+        function division(a, b) {
+
+            return +a / +b;
+        }
+    </script>
+
+</body>
+
+</html>
